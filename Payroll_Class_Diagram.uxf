@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>530</y>
+      <w>240</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Payment Method
+--
+Direct Deposit - Requires Signature 
+                          Form
+Mail
+Pick Up
+--
+Collaborators
+- Bank Info
+- Employee</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>530</y>
+      <w>240</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Bank Info
+--
+Bank Name 
+Account Number
+Routing Number
+--
+Collaborators
+- Employee
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>0</y>
+      <w>240</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Salary Employee
+--
+Name 
+Address
+Phone Number
+Social Security Number
+Employee ID#
+Choose Payment Method
+Paid a Flat Salary
+Pay Day is the Last Day of the Month
+--
+Collaborators
+- Payment Method</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>240</y>
+      <w>240</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Hourly Employee + Union Member
+--
+Name 
+Address
+Phone Number
+Social Security Number
+Employee ID#
+Choose Payment Method
+Paid Hourly Rate
+Charged a Union Weekly Dues Rate
+Service Charge May Exist
+Pay Day is Every Friday
+Overtime Pay = 1.5 * Overtime Hours
+--
+Collaborators
+- Payment Method
+- Union
+- Time Card</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>0</y>
+      <w>240</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Salary + Commission Employee
+--
+Name 
+Address
+Phone Number
+Social Security Number
+Employee ID#
+Choose Payment Method
+Paid a Flat Salary
+Paid Commission 
+Pay Day is Every Other Friday
+--
+Collaborators
+- Payment Method</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>0</y>
+      <w>240</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>Hourly Employee
+--
+Name 
+Address
+Phone Number
+Social Security Number
+Employee ID#
+Choose Payment Method
+Paid Hourly Rate
+Pay Day is Every Friday
+Overtime Pay = 1.5 * Overtime Hours
+--
+Collaborators
+- Payment Method
+- Time Card</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>240</y>
+      <w>240</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Salary Employee + Union Member
+--
+Name 
+Address
+Phone Number
+Social Security Number
+Employee ID#
+Choose Payment Method
+Paid a Flat Salary
+Charged a Union Weekly Dues Rate
+Service Charge May Exist
+Pay Day is the Last Day of the Month
+--
+Collaborators
+- Payment Method
+- Union</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>240</y>
+      <w>240</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Salary + Commission Employee + 
+Union Member
+--
+Name 
+Address
+Phone Number
+Social Security Number
+Employee ID#
+Choose Payment Method
+Paid a Flat Salary
+Paid Commission 
+Charged a Union Weekly Dues Rate
+Service Charge May Exist
+Pay Day is Every Other Friday
+--
+Collaborators
+- Payment Method
+- Union</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>730</y>
+      <w>240</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Union 
+--
+Submit the Weekly Dues Rate
+Submit the Service Charge
+--
+Collaborators
+- Union Employee
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>730</y>
+      <w>240</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Commission Rate
+--
+Submit Commission Rate
+Commission = Sales * Commission 
+                                    Rate
+--
+Collaborators
+- Commission Employee
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>730</y>
+      <w>240</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Automated Payroll System
+--
+Calculated Daily
+Recieves Employee Payment 
+Information
+Pays Employee on the Appropriate 
+Pay Day
+--
+Collaborators
+- Employee
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>530</y>
+      <w>240</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Time Card
+--
+Receives Number of Hours Worked
+from Hourly Employees
+Over 8 Hours are Overtime Hours
+Calculates Info Daily
+--
+Collaborators
+- Hourly Employee
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
